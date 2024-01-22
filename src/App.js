@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import "./css/product.css";
+import "./css//contact.css";
+import "./css/video.css";
+import Menu from "./menu";
+import ScrollE from "./scroll-effect";
+import Wheels from "./wheels";
+import Images from "./images.js";
+import Contact from "./contact.js";
+import Videomp4 from "./video.js";
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <Menu />
+      <img className="main-logo" src={Images.logos} />
+      <section className="videobg">
+        <Videomp4 />
+      </section>
+
+      <header id="products" className="App-header">
+        <Wheels />
+        <a href="https://www.bagriders.com/air-ride-kits.html" target="blank">
+        <img className="bg-img" src={Images.SuspensionKit} />
         </a>
       </header>
+
+      <div id="serv" className="serv">
+        <h1 className="services-h1 ">Services</h1>
+        <ScrollE />
+      </div>
+      
+      
+      <footer id="about-us" className="bottom">
+      
+        <Contact />
+      </footer>
     </div>
   );
 }
-
-export default App;

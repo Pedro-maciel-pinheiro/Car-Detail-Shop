@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+  background-color: rgb(238, 238, 238);
+}
+
+.App-header {
+  background-color: rgb(238, 238, 238);
+  width: 100vw;
+  color: #000000;
+}
+
+.div-h1 p {
+  margin-top: 3%;
+  width: 100vw;
+  font-size: 5vw;
+  height: 8vw;
+  color: #000000;
+  font-weight: 800;
+}
+
+.ul-list-wheels {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  width: 100vw;
+
+  color: #ffffff;
+}
+
+@media screen and (max-width: 920px) {
+  .ul-list-wheels {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    gap: 20px;
+  }
+}
+
+.li-list-wheels > p {
+  text-transform: capitalize;
+  font-size: 1vw;
+}
+
+.li-list-wheels {
+  margin: 0 auto;
+  width: 15vw;
+  height: 18vw;
+  border-radius: 35px;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.596);
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 920px) {
+  .li-list-wheels {
+    margin: 0 auto;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.384);
+    transition: 0.3s;
+  }
+}
+
+.li-list-wheels:hover {
+  font-weight: 900;
+  transform: translateX(2px);
+}
+
+.li-list-wheels p {
+  color: #000000;
+}
+
+.li-list-wheels img {
+  width: 14vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.hidden-wheel {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(100%);
+  transition: all 2.5s;
+}
+
+.show-wheel {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
