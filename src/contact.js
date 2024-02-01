@@ -18,7 +18,7 @@ const Contact = () => {
       <section className="section-bottom">
         <ul className="ul-list-aboutus">
           <p className="text">
-            <h1>PerfertShine</h1>
+            <h1>PerfectShine</h1>
             PerfectShine is synonymous with uncompromising dedication to
             excellence. Our team of skilled artisans and detailing experts share
             a passion
